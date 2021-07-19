@@ -646,6 +646,17 @@ p {
     line-height: 2rem;
   }
 }
+
+#post-container a {
+  --tw-text-opacity: 1;
+  color: rgba(183, 63, 28, var(--tw-text-opacity));
+}
+
+#post-container a:hover {
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgba(142, 20, 0, var(--tw-text-opacity));
+}
 .container {
   width: 100%;
 }
@@ -699,6 +710,24 @@ p {
 .page-content{
     max-width:1200px;
   }
+.current-menu-item {
+  border-bottom-width: 2px !important;
+  border-style: solid !important;
+  --tw-border-opacity: 1 !important;
+  border-color: rgba(235, 225, 213, var(--tw-border-opacity)) !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+  --tw-text-opacity: 1 !important;
+  color: rgba(235, 225, 213, var(--tw-text-opacity)) !important;
+}
+@media (min-width: 1024px) {
+  .current-menu-item {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}
 .float-left {
   float: left;
 }
@@ -753,6 +782,9 @@ p {
 .h-full {
   height: 100%;
 }
+.h-12 {
+  height: 3rem;
+}
 .w-6 {
   width: 1.5rem;
 }
@@ -764,6 +796,9 @@ p {
 }
 .max-w-\[20rem\] {
   max-width: 20rem;
+}
+.max-w-\[35rem\] {
+  max-width: 35rem;
 }
 .flex-shrink-0 {
   flex-shrink: 0;
@@ -802,6 +837,12 @@ p {
 }
 .border-b-4 {
   border-bottom-width: 4px;
+}
+.border-t-4 {
+  border-top-width: 4px;
+}
+.border-solid {
+  border-style: solid;
 }
 .border-white {
   --tw-border-opacity: 1;
@@ -854,6 +895,10 @@ p {
   padding-left: 6rem;
   padding-right: 6rem;
 }
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
 .pb-8 {
   padding-bottom: 2rem;
 }
@@ -885,6 +930,10 @@ p {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 .font-bold {
   font-weight: 700;
@@ -925,12 +974,6 @@ p {
   }
 }
 @media (min-width: 1024px) {
-  .lg\:ml-\[50\%\] {
-    margin-left: 50%;
-  }
-  .lg\:mr-\[50\%\] {
-    margin-right: 50%;
-  }
   .lg\:block {
     display: block;
   }
@@ -939,6 +982,12 @@ p {
   }
   .lg\:hidden {
     display: none;
+  }
+  .lg\:max-h-\[30em\] {
+    max-height: 30em;
+  }
+  .lg\:min-h-\[25em\] {
+    min-height: 25em;
   }
   .lg\:w-auto {
     width: auto;
@@ -951,6 +1000,12 @@ p {
   }
   .lg\:w-2\/6 {
     width: 33.333333%;
+  }
+  .lg\:w-\[33\%\] {
+    width: 33%;
+  }
+  .lg\:w-5\/6 {
+    width: 83.333333%;
   }
   .lg\:flex-row {
     flex-direction: row;

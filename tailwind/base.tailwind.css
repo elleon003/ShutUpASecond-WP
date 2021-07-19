@@ -29,6 +29,9 @@
   p{
     @apply text-xl 2xl:text-2xl mb-4;
   }
+  #post-container a {
+    @apply text-accent hover:text-accent-dark hover:font-bold;
+  }
 }
 
 @layer components {
@@ -40,5 +43,8 @@
   }
   .page-content{
     max-width:1200px;
+  }
+  .current-menu-item {
+    @apply border-b-2 border-solid border-white text-white px-0 py-4 lg:px-4 !important;
   }
 }

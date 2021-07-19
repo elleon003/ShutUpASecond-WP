@@ -232,6 +232,9 @@ if ( ! function_exists( 'shutupasecond_enqueue_scripts' ) ) :
     wp_deregister_style( 'shutupasecond-tailwind' );
     wp_enqueue_style( 'shutupasecond-tailwind', get_template_directory_uri() . '/tailwind.css', false, null, 'all');
 
+    wp_deregister_style( 'shutupasecond-all' );
+    wp_enqueue_style( 'shutupasecond-all', 'https://use.fontawesome.com/releases/v5.13.1/css/all.css', false, null, 'all');
+
     wp_deregister_style( 'shutupasecond-style' );
     wp_enqueue_style( 'shutupasecond-style', get_bloginfo('stylesheet_url'), false, null, 'all');
 
@@ -249,6 +252,8 @@ function pgwp_sanitize_placeholder($input) { return $input; }
 require_once "inc/custom.php";
 require_once "inc/wp_pg_helpers.php";
 require_once "inc/wp_smart_navwalker.php";
+require_once "inc/wp_pg_pagination.php";
 
     /* Pinegrow generated Include Resources End */
+
 ?>

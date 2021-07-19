@@ -7,6 +7,7 @@
 		<title>Shut Up A Second</title>		 
 		<link rel="stylesheet" href="tailwind.css"> 
 		<script>/* Pinegrow Interactions, do not remove */ (function(){try{if(!document.documentElement.hasAttribute('data-pg-ia-disabled')) { window.pgia_small_mq=typeof pgia_small_mq=='string'?pgia_small_mq:'(max-width:767px)';window.pgia_large_mq=typeof pgia_large_mq=='string'?pgia_large_mq:'(min-width:768px)';var style = document.createElement('style');var pgcss='html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}';if(document.documentElement.hasAttribute('data-pg-id') && document.documentElement.hasAttribute('data-pg-mobile')) {pgia_small_mq='(min-width:0)';pgia_large_mq='(min-width:99999px)'} pgcss+='@media ' + pgia_small_mq + '{ html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}}';pgcss+='@media ' + pgia_large_mq + '{html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}}';style.innerHTML=pgcss;document.querySelector('head').appendChild(style);}}catch(e){console&&console.log(e);}})()</script>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css">
 	</head>	 
 	<body class='flex flex-col h-full'> 
 		<header class="bg-black w-full"> 
@@ -25,14 +26,21 @@
 			</nav>			 
 		</header>		 
 		<main class="bg-white flex flex-col flex-shrink-0" wp-site-content>
-			<div class="bg-white h-full mx-auto page-content px-24 py-8 w-full lg:block">
-				<h2 class="mb-8 text-center" wp-title wp-title-set="content">Heading 2</h2>
+			<div class="bg-white mx-auto page-content px-24 py-8 w-full lg:block">
+				<h2 class="mb-8 text-center" cms-post-title>Heading 2</h2>
 				<div class="border-4 border-black float-left max-w-[20rem] mr-4 p-2 rounded">
 					<img src="http://pinegrow.com/placeholders/img14.jpg" cms-post-image="full"/>
 				</div>
 				<!-- start slipsum code -->
 				<p cms-post-content>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing. </p>
 				<!-- end slipsum code -->
+			</div>
+			<div class="bg-white border-black border-t-4 flex flex-col lg:flex-row">
+				<div class="border-black mx-auto py-8 lg:border-l-4 lg:border-r-4 lg:px-4 lg:w-2/6"> 
+					<php>
+					echo do_shortcode("[sibwp_form id=1]")
+					</php>					 
+				</div>
 			</div>
 		</main>		 
 		<footer class="align-middle bg-black flex flex-col mt-auto px-4 py-8">

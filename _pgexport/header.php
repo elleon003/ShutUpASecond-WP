@@ -20,14 +20,18 @@
                     <span class="block border-b-2 border-current my-1 w-6"></span> 
                 </button>                 
                 <div class="lg:flex lg:space-x-4 lg:space-y-0 lg:w-auto space-y-2 w-full hidden lg:items-center" data-name="nav-menu"> 
-                    <?php
-                        PG_Smart_Walker_Nav_Menu::$options['template'] = '<a class="border-b-2 border-transparent text-white-dark hover:border-white hover:text-white px-0 py-4 lg:px-4 {CLASSES}" id="{ID}" {ATTRS}>{TITLE}</a>';
-                        wp_nav_menu( array(
-                        	'menu' => 'primary',
-                        	'container' => '',
-                        	'items_wrap' => '<div class="%2$s flex flex-col justify-between lg:flex-row" id="%1$s">%3$s</div>',
-                        	'walker' => new PG_Smart_Walker_Nav_Menu()
-                    ) ); ?> 
+                    <div class="flex flex-col justify-between lg:flex-row"> 
+                        <?php if ( has_nav_menu( 'primary' ) ) : ?>
+                            <?php
+                                PG_Smart_Walker_Nav_Menu::$options['template'] = '<a class="border-b-2 border-solid border-transparent hover:border-white hover:text-white px-0 py-4 text-white-dark lg:px-4 {CLASSES}" id="{ID}" {ATTRS}>{TITLE}</a>';
+                                wp_nav_menu( array(
+                                	'container' => '',
+                                	'theme_location' => 'primary',
+                                	'items_wrap' => '%3$s',
+                                	'walker' => new PG_Smart_Walker_Nav_Menu()
+                            ) ); ?>
+                        <?php endif; ?> 
+                    </div>                     
                 </div>                 
             </nav>             
         </header>         

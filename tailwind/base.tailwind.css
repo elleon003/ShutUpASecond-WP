@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "Allerta Stencil";
+  src: url("fonts/AllertaStencil-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("fonts/Raleway-VariableFont_wght.woff") format("woff");
+}
+@font-face {
+  font-family:"Raleway";
+  src: url("fonts/Raleway-Italic-VariableFont_wght.woff") format("woff");
+  font-style:italic;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-4xl;
+  }
+  h2 {
+    @apply text-3xl 2xl:text-4xl font-bold;
+  }
+  h3 {
+    @apply text-2xl 2xl:text-3xl font-bold;
+  }
+  p{
+    @apply text-xl 2xl:text-2xl mb-4;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-block text-white text-center cursor-pointer py-2 px-3 rounded font-display bg-accent hover:bg-accent-dark;
+  }
+  .border-transparent	{
+    border-color:transparent;
+  }
+  .page-content{
+    max-width:1200px;
+  }
+}

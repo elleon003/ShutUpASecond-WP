@@ -1,0 +1,70 @@
+<!DOCTYPE html> 
+<html lang="en" class="h-full" wp-template> 
+	<head> 
+		<meta charset="UTF-8"> 
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Shut Up A Second</title>		 
+		<link rel="stylesheet" href="tailwind.css"> 
+		<script>/* Pinegrow Interactions, do not remove */ (function(){try{if(!document.documentElement.hasAttribute('data-pg-ia-disabled')) { window.pgia_small_mq=typeof pgia_small_mq=='string'?pgia_small_mq:'(max-width:767px)';window.pgia_large_mq=typeof pgia_large_mq=='string'?pgia_large_mq:'(min-width:768px)';var style = document.createElement('style');var pgcss='html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}';if(document.documentElement.hasAttribute('data-pg-id') && document.documentElement.hasAttribute('data-pg-mobile')) {pgia_small_mq='(min-width:0)';pgia_large_mq='(min-width:99999px)'} pgcss+='@media ' + pgia_small_mq + '{ html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}}';pgcss+='@media ' + pgia_large_mq + '{html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}}';style.innerHTML=pgcss;document.querySelector('head').appendChild(style);}}catch(e){console&&console.log(e);}})()</script>
+	</head>	 
+	<body class='flex flex-col'> 
+		<header class="bg-black container mx-auto"> 
+			<nav class="flex flex-wrap font-display items-center max-w-[1284px] mx-auto px-4 py-5 text-white"> 
+				<a href="#" class="hover:underline mr-auto" cms-site-name><h1 class="text-2xl 2xl:text-3xl">Shut Up a Second.</h1></a> 
+				<button class="px-3 py-2 rounded text-white lg:hidden" data-name="nav-toggler" data-pg-ia='{"l":[{"name":"NabMenuToggler","trg":"click","a":{"l":[{"t":"^nav|[data-name=nav-menu]","l":[{"t":"set","p":0,"d":0,"l":{"class.remove":"hidden"}}]},{"t":"#gt# span:nth-of-type(1)","l":[{"t":"tween","p":0,"d":0.2,"l":{"rotationZ":45,"yPercent":300}}]},{"t":"#gt# span:nth-of-type(2)","l":[{"t":"tween","p":0,"d":0.2,"l":{"autoAlpha":0}}]},{"t":"#gt# span:nth-of-type(3)","l":[{"t":"tween","p":0,"d":0.2,"l":{"rotationZ":-45,"yPercent":-300}}]}]},"pdef":"true","trev":"true"}]}' data-pg-ia-apply="$nav [data-name=nav-toggler]"> 
+					<span class="block border-b-2 border-current my-1 w-6"></span> 
+					<span class="block border-b-2 border-current my-1 w-6"></span> 
+					<span class="block border-b-2 border-current my-1 w-6"></span> 
+				</button>				 
+				<div class="lg:flex lg:space-x-4 lg:space-y-0 lg:w-auto space-y-2 w-full hidden lg:items-center" data-name="nav-menu"> 
+					<div class="flex flex-col justify-between lg:flex-row 2xl:text-2xl" wp-nav-menu="primary" wp-nav-menu-type="smart" wp-nav-menu-set="content"> 
+						<a href="#" class="active border-b-2 border-white px-0 py-4 lg:px-4">Home</a>
+						<a href="#" class="border-b-2 border-transparent hover:border-white px-0 py-4 lg:px-4">Home</a>
+						<a href="#" class="border-b-2 border-transparent hover:border-white px-0 py-4 lg:px-4">Home</a>
+						<a href="#" class="border-b-2 border-transparent hover:border-white px-0 py-4 lg:px-4">Home</a> 
+					</div>					 
+				</div>				 
+			</nav>			 
+		</header>		 
+		<main class="flex-shrink-0" wp-site-content>
+			<div class="bg-white flex flex-col lg:flex-row" cms-section="home_content" cms-section-title="Home Content">
+				<div class="border-b-4 border-black w-full lg:w-[60%]">
+					<img src="http://pinegrow.com/placeholders/img20.jpg" cms-editable="Home Image" cms-editable-type="image" cms-editable-label="Home Image" cms-editable-section="home_content" class="w-full"/>
+				</div>
+				<div class="border-b-4 flex flex-col justify-center w-full lg:border-black lg:border-l-4 lg:w-[40%]" cms-section="home_content" cms-section-title="Home Content">
+					<h2 class="font-bold px-4 py-8 2xl:text-4xl" cms-editable="Intro" cms-editable-type="content" cms-editable-label="intro">I tell other people&apos;s stories for a living. Here, I tell mine.</h2>
+					<p class="pb-8 px-4 2xl:text-2xl" cms-editable="Intro Paragraph" cms-editable-type="content" cms-editable-label="Intro Paragraph" cms-editable-section="home_content">Stay a while, read a couple.</p>
+					<a class="btn mb-8 mx-auto self-start text-white" cms-editable="About Button Text" cms-editable-type="content" cms-editable-type-2="link" cms-editable-label="About  Button Text" cms-editable-2="About Link" cms-editable-label-2="about_link" cms-editable-section="home_content" cms-editable-section-2="home_content">Who's this guy?</a>
+				</div>
+			</div>
+			<div class="bg-white flex flex-col lg:flex-row" cms-post="query" cms-post-type="post" cms-post-type-query-name="latest_post_query" cms-post-type-count="1" cms-post-type-paginate="false" cms-post-items-container="this" cms-post-type-order="date DESC">
+				<div class="border-b-4 flex flex-col justify-center w-full lg:border-r-4 lg:w-[40%]">
+					<h2 class="font-display mx-8 my-4 text-4xl text-accent xl:text-5xl">Latest Blog Post</h2>
+					<h3 class="font-bold mx-8 text-2xl xl:text-3xl" cms-post-title>Heading 3</h3>
+					<p class="mx-8 my-8" cms-post-excerpt><!-- start slipsum code -->
+Normally, both your asses would be dead as fucking fried chicken, but you happen to pull this shit while I&apos;m in a transitional period so I don&apos;t wanna kill you, I wanna help you. But I can&apos;t give you this case, it don&apos;t belong to me. Besides, I&apos;ve already been through too much shit this morning ...<!-- end slipsum code --></p>
+					<a class="btn mb-8 mx-auto" href="#" cms-post-link>Read More</a>
+				</div>
+				<div class="border-b-4 w-full lg:w-[60%]">
+					<img src="http://pinegrow.com/placeholders/img15.jpg" class="block" cms-post-image="full" wp-if-has-post-thumbnail/>
+					<img src="images/little-boy-looking-out.jpg" class="block" wp-else-if/>
+				</div>
+			</div>
+			<div class="bg-white flex flex-col lg:flex-row">
+				<div class="border-black mx-auto py-8 lg:border-l-4 lg:border-r-4 lg:px-4 lg:w-2/6" wp-the-content wp-the-content-set="content"></div>
+			</div>
+		</main>		 
+		<footer class="align-middle bg-black flex flex-col mt-auto px-4 py-8">
+			<div class="flex flex-col justify-center text-white md:flex-row">
+				<p class="text-sm">&copy;2021 <a class="hover:text-accent text-sm" href="#" cms-site-link="home">Shut Up A Second.</a></p>
+				<p class="hidden px-4 text-sm md:inline">|</p>
+				<a class="hover:text-accent text-sm" href="#" cms-site-link="page" cms-site-link-post="privacy-policy">Privacy Policy</a>
+			</div>
+			<div class="flex justify-center mt-4 text-white"> 
+				<p class="text-sm">Site Build By <a class="text-sm text-accent hover:underline" href="https://sageninecreative.com">Sage Nine Creative</a></p> 
+			</div>
+		</footer>		 
+		<script src="pgia/lib/pgia.js"></script>
+	</body>	 
+</html>

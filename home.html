@@ -1,5 +1,5 @@
 <!DOCTYPE html> 
-<html lang="en" class="h-full" wp-template wp-template-export-as="page.php"> 
+<html lang="en" class="h-full" wp-template> 
 	<head> 
 		<meta charset="UTF-8"> 
 		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
@@ -8,7 +8,7 @@
 		<link rel="stylesheet" href="tailwind.css"> 
 		<script>/* Pinegrow Interactions, do not remove */ (function(){try{if(!document.documentElement.hasAttribute('data-pg-ia-disabled')) { window.pgia_small_mq=typeof pgia_small_mq=='string'?pgia_small_mq:'(max-width:767px)';window.pgia_large_mq=typeof pgia_large_mq=='string'?pgia_large_mq:'(min-width:768px)';var style = document.createElement('style');var pgcss='html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}';if(document.documentElement.hasAttribute('data-pg-id') && document.documentElement.hasAttribute('data-pg-mobile')) {pgia_small_mq='(min-width:0)';pgia_large_mq='(min-width:99999px)'} pgcss+='@media ' + pgia_small_mq + '{ html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}}';pgcss+='@media ' + pgia_large_mq + '{html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}}';style.innerHTML=pgcss;document.querySelector('head').appendChild(style);}}catch(e){console&&console.log(e);}})()</script>
 	</head>	 
-	<body class='flex flex-col h-full'> 
+	<body class='flex flex-col'> 
 		<header class="bg-black w-full"> 
 			<nav class="flex flex-wrap font-display items-center px-4 py-5 text-white w-full 2xl:max-w-[85%] 2xl:mx-auto"> 
 				<a href="#" class="hover:underline mr-auto text-3xl" cms-site-name><h1>Shut Up a Second.</h1></a> 
@@ -24,15 +24,24 @@
 				</div>				 
 			</nav>			 
 		</header>		 
-		<main class="bg-white flex flex-col flex-shrink-0" wp-site-content>
-			<div class="bg-white h-full mx-auto page-content px-24 py-8 w-full lg:block">
-				<h2 class="mb-8 text-center" wp-title wp-title-set="content">Heading 2</h2>
-				<div class="border-4 border-black float-left max-w-[20rem] mr-4 p-2 rounded">
-					<img src="http://pinegrow.com/placeholders/img14.jpg" cms-post-image="full"/>
+		<main class="bg-white flex-shrink-0" wp-site-content>
+			<div wp-loop>
+				<div class="flex flex-col mx-8 my-4 lg:ml-[50%]">
+					<div class="border-b-4 border-black flex flex-col w-full">
+						<h3>Heading 3</h3>
+						<p class="text-xs my-2">July 5, 2021</p>
+						<p>In the summer of 2011, I quit my job, moved into an attic apartment in a brownstone, and wrote for my damn life. I was in Covington, a river town that's just a flip-flop's throw...</p>
+						<a class="btn block mx-auto my-4" href="#">Read More</a>
+					</div>
 				</div>
-				<!-- start slipsum code -->
-				<p cms-post-content>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing. </p>
-				<!-- end slipsum code -->
+				<div class="flex flex-col mx-8 my-4 lg:mr-[50%]">
+					<div class="border-b-4 border-black flex flex-col w-full">
+						<h3>Heading 3</h3>
+						<p class="text-xs my-2">July 5, 2021</p>
+						<p>In the summer of 2011, I quit my job, moved into an attic apartment in a brownstone, and wrote for my damn life. I was in Covington, a river town that's just a flip-flop's throw...</p>
+						<a class="btn block mx-auto my-4" href="#">Read More</a>
+					</div>
+				</div>
 			</div>
 		</main>		 
 		<footer class="align-middle bg-black flex flex-col mt-auto px-4 py-8">

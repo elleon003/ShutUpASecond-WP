@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
-<div class="bg-white mx-auto page-content px-24 py-8 w-full lg:block">
-    <h2 class="mb-8 text-center"><?php the_title(); ?></h2>
-    <div class="border-4 border-black float-left max-w-[20rem] mr-4 p-2 rounded">
+<div class="bg-white flex flex-col mx-auto page-content px-8 py-8 w-full md:block lg:px-24">
+    <h2 class="mb-8 text-center md:text-left"><?php the_title(); ?></h2>
+    <div class="border-4 border-black float-left max-w-[20rem] mx-auto p-2 rounded md:ml-0 md:mr-4">
         <?php echo PG_Image::getPostImage( null, 'full', null, 'both', null ) ?>
     </div>
     <!-- start slipsum code -->

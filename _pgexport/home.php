@@ -5,12 +5,12 @@
         <div class="flex flex-col flex-wrap mx-auto lg:flex-row">
             <?php while ( have_posts() ) : the_post(); ?>
                 <?php PG_Helper::rememberShownPost(); ?>
-                <div <?php post_class( 'flex flex-col mx-auto my-8 px-8 w-full lg:max-h-[30em] lg:min-h-[25em] lg:w-[33%]' ); ?> id="post-<?php the_ID(); ?>">
-                    <div class="border-b-4 border-black flex flex-col w-full">
-                        <h3><?php the_title(); ?></h3>
+                <div <?php post_class( 'flex flex-col lg:max-h-[30em] lg:min-h-[25em] lg:w-[42%] mx-auto my-4 px-8 py-4 w-full xl:w-[33%]' ); ?> id="post-<?php the_ID(); ?>">
+                    <div class="flex flex-col w-full">
+                        <h3 class="text-2xl"><?php the_title(); ?></h3>
                         <p class="text-xs my-2"><?php the_time( get_option( 'date_format' ) ); ?></p>
                         <?php the_excerpt( ); ?>
-                        <a class="btn block mx-auto my-4" href="<?php echo esc_url( get_permalink() ); ?>"><?php _e( 'Read More', 'shutupasecond' ); ?></a>
+                        <a class="block btn mt-4 mx-auto" href="<?php echo esc_url( get_permalink() ); ?>"><?php _e( 'Read More', 'shutupasecond' ); ?></a>
                     </div>
                 </div>
             <?php endwhile; ?>
@@ -20,7 +20,7 @@
     <?php endif; ?>
 </div>
 <?php if ( PG_Pagination::isPaginated() ) : ?>
-    <div class="flex flex-col items-center justify-center mb-8 mt-4 mx-auto w-full lg:w-5/6"> 
+    <div class="flex flex-col items-center justify-center mb-8 mx-auto pt-8 w-full lg:w-5/6"> 
         <?php if( PG_Pagination::getCurrentPage() < PG_Pagination::getMaxPages() ) : ?>
             <a class="btn h-12 my-4" <?php echo PG_Pagination::getNextHrefAttribute(); ?>>  <?php _e( 'Next Page &gt;&gt;', 'shutupasecond' ); ?> </a>
         <?php endif; ?>

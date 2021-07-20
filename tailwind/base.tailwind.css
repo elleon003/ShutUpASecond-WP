@@ -1,13 +1,16 @@
 @font-face {
   font-family: "Allerta Stencil";
+  font-display:swap;
   src: url("fonts/AllertaStencil-Regular.woff") format("woff");
 }
 @font-face {
   font-family: "Raleway";
+  font-display:swap;
   src: url("fonts/Raleway-VariableFont_wght.woff") format("woff");
 }
 @font-face {
   font-family:"Raleway";
+  font-display:swap;
   src: url("fonts/Raleway-Italic-VariableFont_wght.woff") format("woff");
   font-style:italic;
 }
@@ -47,4 +50,10 @@
   .current-menu-item {
     @apply border-b-2 border-solid border-white text-white px-0 py-4 lg:px-4 !important;
   }
+  @media all and (min-width: 1024px) {
+    .min-height {
+      min-height: 675px;
+    }
+  }
+  
 }

@@ -1,10 +1,10 @@
 <?php get_header(); ?>
 
-<div class="bg-white mx-auto page-content px-24 py-8 w-full lg:block" id="post-container">
-    <h2 class="block mb-8 mx-auto"><?php the_title(); ?></h2>
+<div class="bg-white flex flex-col mx-auto page-content px-8 py-8 w-full md:block lg:px-24" id="post-container">
+    <h2 class="block mb-8 mx-auto md:mx-0"><?php the_title(); ?></h2>
     <p class="font-bold text-sm"><?php the_time( get_option( 'date_format' ) ); ?></p>
     <?php echo PG_Image::getPostImage( null, 'full', array(
-        	'class' => 'border-4 border-black float-left max-w-[35rem] mr-4 p-2 rounded'
+        	'class' => 'border-4 border-black float-left mr-4 p-2 rounded w-full md:max-w-[25rem] lg:max-w-[35rem]'
     ), 'both', null ) ?>
     <!-- start slipsum code -->
     <?php the_content(); ?>

@@ -2,9 +2,9 @@
 
 <div class="bg-white flex flex-col mx-auto page-content px-8 py-8 w-full md:block lg:px-24">
     <h2 class="mb-8 text-center md:text-left"><?php the_title(); ?></h2>
-    <div class="border-4 border-black float-left max-w-[20rem] mx-auto p-2 rounded md:ml-0 md:mr-4">
-        <?php echo PG_Image::getPostImage( null, 'full', null, 'both', null ) ?>
-    </div>
+    <?php echo PG_Image::getPostImage( null, 'full', array(
+        	'class' => 'border-4 border-black float-left max-w-[20rem] mx-auto p-2 rounded md:ml-0 md:mr-4'
+    ), 'both', null ) ?>
     <!-- start slipsum code -->
     <?php the_content(); ?>
     <!-- end slipsum code -->
